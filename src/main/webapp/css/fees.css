@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  margin-top: 20px;
+  background-color: #caeaec;
+}
+
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.column {
+  flex: 25%;
+  padding: 10px;
+  width: calc(33.3% - 30px);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 980px) {
+  .column {
+    flex: 50%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    display: block;
+  }
+}
+
+.card {
+  transition: all 0.4s ease;
+  height: 630px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to left, #a55eea, #45aaf2);
+}
+
+.batch-title {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  top: 20%;
+}
+
+
+.batch-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  left: calc(50% - 60px);
+  top: 60%;
+  background-color: white;
+  position: absolute;
+}
+
+.batch-circle img{
+  margin-top: 10px;
+}
+
+h2 {
+  position: relative;
+  top: 40%;
+  color: #fff;
+}
+
+ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  margin-top: 75px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+ul li {
+  list-style-type: none;
+  display: block;
+  font-size: 18px; 
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.basic .header {
+  background-color: #4b7bec;
+}
+
+.basic .batch-circle {
+  border: 10px solid #4b7bec;
+}
+
+.basic:hover .batch-circle {
+  border-width: 5px;
+}
+
+.echo .header {
+  background-color: #f7b731;
+}
+
+.echo .batch-circle {
+  border: 10px solid #f7b731;
+}
+
+.echo:hover .batch-circle {
+  border-width: 5px;
+}
+
+.pro .header {
+  background-color: #26de81;
+}
+
+.pro .batch-circle {
+  border: 10px solid #26de81;
+}
+
+.pro:hover .batch-circle {
+  border-width: 5px;
+}
+
+.account p{
+	margin-left: 150px;
+	margin-top: 25px;
+	font-size: 18px; 
+}
+
+.pgcontainer {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.pgcolumn {
+  flex: 25%;
+  padding: 10px;
+  width: calc(33.3% - 30px);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 980px) {
+  .pgcolumn {
+    flex: 50%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pgcolumn {
+    flex: 100%;
+    display: block;
+  }
+}
+
+.pgcard {
+  transition: all 0.4s ease;
+  height: 520px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.pgcard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.pgheader {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to left, #a55eea, #45aaf2);
+}
+
+.pg-title {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  top: 20%;
+}
+
+
+.pg-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  left: calc(50% - 60px);
+  top: 60%;
+  background-color: white;
+  position: absolute;
+}
+
+.pg-circle img{
+  margin-top: 10px;
+}
+
+.basic .pgheader {
+  background-color: #4b7bec;
+}
+
+.basic .pg-circle {
+  border: 10px solid #4b7bec;
+}
+
+.basic:hover .pg-circle {
+  border-width: 5px;
+}

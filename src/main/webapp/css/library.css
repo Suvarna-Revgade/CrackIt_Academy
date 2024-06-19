@@ -1,0 +1,217 @@
+.library-info{
+    background-image: url("https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png");
+    height:70vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+.library-content h1{
+  background-color: white;
+  width:30rem;
+  height: 10rem;
+  
+ 
+}
+.card-contain{
+width:320px;
+  height:500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border:8px solid black;
+  position: relative;
+   margin:30px;
+  
+}
+.card-contain img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center ;
+  animation: scroll 40s linear infinite;
+  
+
+}
+
+.card-body{
+ 
+  width:100%;
+  height:100%;
+  bottom:-100%;
+  position: absolute;
+  backdrop-filter:blur(5px);
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgba(128, 128, 128, 0.601);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.card-title{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+
+}
+.card-sub-title{
+  text-transform: capitalize;
+  font-size:14px;
+  font-weight: 300;
+
+}
+.card-body button{
+  color:black;
+ width:10rem;
+ margin-bottom:3rem;
+   margin-left:2rem;
+  background-color: white;
+  padding:10px 10px;
+ 
+  text-transform: capitalize;
+  border:none;
+  outline:none;
+ 
+  cursor:pointer;
+
+}
+.card-contain:hover .card-body{
+  bottom: 0;
+  transition: 2s;
+  
+
+}
+.card-container::before,
+.card-container::after{
+  position: absolute;
+  z-index: 2;
+
+}
+
+.card-container::after{
+  right: 0;
+  top:0;
+  transform: rotateZ(180deg);
+}
+.libary-feature{
+  display: flex;
+     align-items: center;
+    justify-content: center;
+  background-color: rgba(49, 45, 45, 0.477);
+}
+.libary-feature ul li{
+  display: inline;
+   margin:2rem;
+   border-right: 1px dashed black;
+   padding-right: 1rem;
+   
+   
+}
+.libary-feature ul li i{
+  font-size:3rem ;
+ 
+  
+
+}
+.libary-feature ul li p{
+  font-size:1.4rem ;
+}
+.libary-feature ul {
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+.lib1{
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  border:1px solid black;
+  padding:0.7rem;
+  width:300px;
+  border-radius:5rem;
+  height: 100px;
+ 
+ 
+}
+.lib1 i{
+  font-size: 2rem;
+  border:1px solid black;
+  padding:0.7rem;
+  border-radius: 100%;
+}
+.lib1 h1 a{
+  color: black;
+text-decoration: none;
+}
+.lib1 h1 a:hover{
+  text-decoration: underline;
+}
+.lib-book{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.library-odd{
+  background-color: rgba(128, 128, 128, 0.264);
+}
+
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+  .library-info {
+    height: 100vh;
+  }
+  .library-content h1 {
+    width: 90%;
+  }
+  .card-contain {
+    width: 90%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card-contain,
+  .card-contain img {
+    border-radius: 0;
+  }
+  .libary-feature ul li {
+    margin: 1rem;
+  }
+  .lib1 {
+    width: 90%;
+  }
+}
+
+/* For screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+  *{
+    overflow-x: hidden;
+  }
+  .library-content h1 {
+    width: 40rem;
+  }
+}
+
+/* For screens larger than 992px */
+@media (min-width: 992px) {
+  .library-info {
+    height: 70vh;
+  }
+  .library-content h1 {
+    width: 30rem;
+  }
+}

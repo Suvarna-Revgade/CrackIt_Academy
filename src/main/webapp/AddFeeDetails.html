@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CrackIt Academy</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://2023.ifla.org/wp-content/uploads/2023/07/WLIC-2023-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    margin-left: 200px;
+  }
+  h2{
+  text-align: center;
+  }
+  .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.row label {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 18px;
+}
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .row select{
+  height: 32px;
+  width: 180px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <form action="AddFeeServlet" method="post">
+  <h2>Add Fee Details</h2>
+  <br>
+    <div class="row">
+  <label for="batchSelect">Select Batch:</label>
+  <select id="batchSelect" style="margin-right: 280px;" required>
+    <option value="UPSC">UPSC</option>
+    <option value="MPSC">MPSC</option>
+    <option value="PSI/STI/ASO">PSI/STI/ASO</option>
+  </select>
+  </div>
+    <label for="gs">GS (Preliminary Cum Main) Fee:</label>
+    <input type="number" id="gs" name="gs" required>
+    <label for="csat">CSAT Fee:</label>
+    <input type="number" id="csat" name="csat" required>
+    <label for="optional">Optional Papers Fee:</label>
+    <input type="number" id="optional" name="optional" required>
+    <label for="gsoptional">GS+CSAT+Optional Paper Fee:</label>
+    <input type="number" id="gsoptional" name="gsoptional" required>
+    <label for="crashCourse">GS Main Crash Course Fee:</label>
+    <input type="number" id="crashCourse" name="crashCourse" required>
+    <label for="studyMaterial">Study Material Fee:</label>
+    <input type="number" id="studyMaterial" name="studyMaterial" required>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

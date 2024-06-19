@@ -1,0 +1,135 @@
+
+.heading {
+	text-align: center;
+	font-style: bold;
+	padding: 30px;
+	margin-left: 20%;
+	background-color: blue;
+	text-shadow: 2px 2px 5px;
+	font-size: 60px
+}
+
+.navbaradmin {
+	top: 0;
+	height: 100vh;
+	width: 210px;
+	background-color: #333;
+	position: fixed;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.navbaradmin a {
+	padding: 15px 10px;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+	display: block;
+}
+
+.navbaradmin a:hover {
+	background-color: #555;
+}
+body {
+  margin: 0;
+}
+
+.w1{
+    height:200px;
+    width:200px;
+    border:3px solid blue;
+    padding:20px;
+    margin-top:60px;
+    margin-left:200px;
+    border-radius:10px;
+   background-color:white;
+    color:midnightblue;
+
+}
+.w1:hover{
+     background-color:aquamarine;
+    border-radius:10px;
+    padding:20px;
+    transform:scale(1.2);
+}
+.w2{
+    height:200px;
+    width:200px;
+    border:3px solid red;
+    padding:20px;
+    margin-top:20px;
+    margin-left:200px;
+    border-radius:10px;
+   background-color:white;
+    color:midnightblue;
+}
+    .w2:hover {
+         background-color:indianred;
+        border-radius: 10px;
+        padding: 20px;
+        transform: scale(1.2);
+    }
+.c1{
+    height:200px;
+    width:200px;
+    border:3px solid green;
+    padding:20px;
+    margin-top:-510px;
+    margin-left:470px;
+    border-radius:10px;
+   background-color:white;
+    color:midnightblue;
+}
+.c1:hover {
+       background-color:lightgreen;
+        border-radius: 10px;
+        padding: 20px;
+        transform: scale(1.2);
+    }
+
+.s1{
+    height:200px;
+    width:200px;
+    border:3px solid yellow;
+    padding:20px;
+     margin-top:20px;
+    margin-left:470px;
+    border-radius:10px;
+  background-color:white;
+    color:midnightblue;
+}
+.s1:hover {
+ background-color:lightyellow;
+        border-radius: 10px;
+        padding: 20px;
+        transform: scale(1.2);
+    }
+
+body{
+    background-color:white;
+}
+h2{
+    
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/*table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}  
+table#alter tr:nth-child(even) {  
+    background-color: #eee;  
+}  
+table#alter tr:nth-child(odd) {  
+    background-color: #fff;  
+}  
+table#alter th {  
+    color: white;  
+    background-color: gray;  
+}  */
+.paint-card {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
